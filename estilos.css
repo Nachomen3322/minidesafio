@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding-top: 100px;
+    font-family: Arial;
+    background-color: #E85860;
+}
+header {
+    text-align: center;
+    font-size: 35px;
+}
+nav {
+    position: fixed;
+    height: 80px;
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background: #e7a2a2e6;
+    width: 100%;
+}
+.menu{
+    position: absolute;
+    right: 20px;
+}
+
+.menu a{
+    color: #333;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 20px;
+    transition: color 0.3s;
+    text-transform: uppercase;
+    
+}
+
+.menu a:hover{
+    color: #E85860;
+}
+h2 {
+    width: 100%;
+    height: 80px;
+    /* margin-top: 80px; */
+    /* padding-top: 90px; */
+    padding-left: 20px;
+    text-decoration-line: underline;
+}
+.logo {
+    background: url(pedidosya.logo.png) no-repeat 50% 50%;
+    background-size: contain;
+    width: 250px;
+    height: 50px;
+    float: left;
+}
+p {
+    font-family: 'Poppins', sans-serif;
+    padding: 5px 10px 10px 20px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* ESTILOS PARA EL MENU DESPLEGABLE */
+.bn {
+    display: none;
+    position: absolute;
+    right: 20px;
+}
+.bn:hover > span {
+    background-color: #E85860;
+}
+.bn span {
+    display: block;
+    margin: 6px;
+    width: 40px;
+    height: 3px;
+    background: #333;
+}
+
+@media only screen and (max-width: 621px){
+    nav {
+        overflow: visible;
+    }
+    .menu {
+        width: 100%;
+        right: 0;
+        top: 80px;
+        background: #f1f1f1E6;
+        overflow: hidden;
+        max-height: 0;
+    }
+    .menu a{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+    }
+    .bn {
+        display: block;
+        cursor: pointer;
+    }
+    .show {
+        max-height: 200px;
+    }
+}
